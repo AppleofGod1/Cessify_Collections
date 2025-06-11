@@ -487,3 +487,167 @@ main {
   font-weight: bold;
   border-radius: 5px;
 }
+
+
+
+
+.essentials {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.essentials h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.essentials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  animation: zoom 0.3s ease-in-out;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.7);}
+  to {transform: scale(1);}
+}
+
+.close {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* Apply this to your body or wrapper */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Apply this to the main content area */
+main {
+  flex: 1;
+}
+
+/* Basic footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+} 
+
+
+
+
+/* Make the page take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the main content area grow */
+.essentials {
+  flex: 1;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+body {
+  overflow-x: hidden;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  z-index: 100;
+}
+
+
+body {
+  padding-bottom: 70px; /* adjust to match your footer height */
+}
+
+
+.essentials {
+  padding-bottom: 70px;
+}

@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kids' Fashion | Cessify Collections</title>
   <link rel="stylesheet" href="./css/style.css" />
+
+
+<!-- Twitter Card Meta Tags for Kids' Collection -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kids' Collection | Cessify Collections" />
+<meta name="twitter:description" content="Durable, colorful, and fun kids’ wear made for every adventure." />
+<meta name="twitter:image" content="https://cessifycollection1.netlify.app/images/kids-collection.jpg" />
+
+
+
 </head>
 <body>
 
@@ -13,6 +23,7 @@
     <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
     <ul class="nav-menu">
       <li><a href="index.html">Home</a></li>
+      <li><a href="essentials.html" class="active">Essentials</a></li>
       <li><a href="men.html">Men</a></li>
       <li><a href="women.html">Women</a></li>
       <li><a href="kids.html" class="active">Kids</a></li>
@@ -34,13 +45,13 @@
 
 
 
-      <div class="category">
-      <a href="https://wa.me/23278075152?text=Hi! I'm interested in the Casual T-Shirts for kids." target="_blank">
-     <img src="./Images/clothing.jpg" alt="Kids T-Shirts" />
-      <h3>Casual T-Shirts</h3>
-      <p class="price">$14.99</p>
-      </a>
-      </div>
+<div class="category">
+  <img src="./Images/clothing.jpg" alt="Kids T-Shirts" />
+  <h3>Casual T-Shirts</h3>
+  <p class="price">$14.99</p>
+  <a href="https://wa.me/23278075152?text=Hi! I'm interested in the Casual T-Shirts for kids." 
+     class="btn" target="_blank">Shop Now</a>
+</div>
 
 
 
@@ -399,12 +410,16 @@
       <p class="price">$14.99</p>
       </a>
       </div>
-
-
 
 
     </div>
   </main>
+
+
+ <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
 
   <footer class="footer">
      <p>&copy; 2025 Cessify Collections. All rights reserved.</p>
